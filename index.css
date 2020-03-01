@@ -1,0 +1,54 @@
+@import "reset.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #535c68;
+}
+
+.clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.clock-title {
+  font-size: 100px;
+  background-color: rgba(149, 175, 192, 0.3);
+  color: #dff9fb;
+  padding: 10px;
+  border-radius: 15px;
+  width: 395px;
+}
+
+.greeting-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.greeting-label {
+  padding: 10px;
+  width: 395px;
+  text-align: center;
+  background-color: rgba(149, 175, 192, 0.3);
+  color: #dff9fb;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.greeting-input {
+  margin: 10px;
+  height: 40px;
+  border: 0px;
+  border-radius: 10px;
+  width: 395px;
+  font-size: 20px;
+  outline: none;
+  text-align: center;
+}
