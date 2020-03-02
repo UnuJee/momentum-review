@@ -10,13 +10,24 @@
     <div class="js-clock-container clock-container">
       <h1 class="js-clock-title clock-title"></h1>
     </div>
-    <form class="js-greeting-container greeting-container">
-      <label class="greeting-label">
+    <form class="js-form-container form-container">
+      <label class="js-form-label form-label">
         Welcome! What is your name?
       </label>
-      <input type="text" class="greeting-input" />
+      <input type="text" class="js-form-input form-input" />
+    </form>
+    <div class="js-greeting-container greeting-container">
+      <div class="js-greeting greeting"></div>
+    </div>
+    <form class="js-todolist-container todolist-container">
+      <label class="js-todolist-label todolist-label">
+        Write a to do
+      </label>
+      <input type="text" class="js-todolist-input todolist-input" />
+      <ul class="js-todo-ul todo-ul"></ul>
     </form>
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
+    <script src="todolist.js"></script>
   </body>
 </html>
