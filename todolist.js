@@ -3,7 +3,7 @@ const toDoLabel = toDoContainer.querySelector(".js-todolist-label");
 const toDoInput = toDoContainer.querySelector(".js-todolist-input");
 const toDoUl = toDoContainer.querySelector(".js-todo-ul");
 const toDoLs = "to-do-local-storage";
-const toDoArray = [];
+let toDoArray = [];
 
 function saveToDo() {
   localStorage.setItem(toDoLs, JSON.stringify(toDoArray));
@@ -16,9 +16,16 @@ function handleSubmit(event) {
   toDoInput.value = "";
 }
 
-// function delToDo() {
-
-// }
+function delToDo(event) {
+  const btn = event.target;
+  const li = btn.parentNode;
+  toDoUl.removeChild(li);
+  const removedToDoArray = toDoArray.filter(function(todo) {
+    todo.id !== parseInt(li.id);
+  });
+  toDoArray = removedToDoArray;
+  saveToDo();
+}
 
 function updateToDo(todo) {
   const li = document.createElement("li");
@@ -26,8 +33,8 @@ function updateToDo(todo) {
   const delBtn = document.createElement("botton");
   const newId = toDoArray.length + 1;
   span.innerText = todo;
-  delBtn.innerText = "❌";
-  // delBtn.addEventListener("click", delToDo);
+  delBtn.innerText = "Done";
+  delBtn.addEventListener("click", delToDo);
   li.appendChild(span);
   li.appendChild(delBtn);
   li.id = newId;
