@@ -30,7 +30,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .weather-title {
@@ -202,4 +202,17 @@ body {
 
 .showing {
   display: flex;
+}
+
+.reload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reload {
+  position: absolute;
+  top: 5px;
+  color: #dff9fb;
+  animation: fadeIn 1s forwards;
 }

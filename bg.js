@@ -2,25 +2,25 @@ const body = document.querySelector("body");
 
 const NUM = 15;
 const NUM_COLOR = {
-  1: "#786fa6",
-  2: "#574b90",
-  3: "#c44569",
-  4: "#b33939",
-  5: "#2c2c54",
-  6: "#0c2461",
-  7: "#0a3d62",
-  8: "#303952",
-  9: "#6D214F",
-  10: "#182C61",
-  11: "#82589F",
-  12: "#535c68",
-  13: "#574b90",
-  14: "#546de5",
-  15: "#c44569"
+  0: "#786fa6",
+  1: "#574b90",
+  2: "#c44569",
+  3: "#b33939",
+  4: "#2c2c54",
+  5: "#0c2461",
+  6: "#0a3d62",
+  7: "#303952",
+  8: "#6D214F",
+  9: "#182C61",
+  10: "#82589F",
+  11: "#535c68",
+  12: "#574b90",
+  13: "#546de5",
+  14: "#c44569"
 };
 
 function genRandom() {
-  const number = Math.floor(Math.random() * NUM) + 1;
+  const number = Math.floor(Math.random() * NUM);
   return number;
 }
 
