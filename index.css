@@ -26,12 +26,13 @@ body {
 }
 
 .clock-title {
-  font-size: 100px;
+  text-align: center;
+  font-size: 80px;
   background-color: rgba(149, 175, 192, 0.3);
   color: #dff9fb;
   padding: 10px;
   border-radius: 15px;
-  width: 395px;
+  width: 330px;
 }
 
 .form-container {
@@ -45,7 +46,7 @@ body {
 
 .form-label {
   padding: 10px;
-  width: 395px;
+  width: 330px;
   text-align: center;
   background-color: rgba(149, 175, 192, 0.3);
   color: #dff9fb;
@@ -59,7 +60,7 @@ body {
   height: 40px;
   border: 0px;
   border-radius: 10px;
-  width: 395px;
+  width: 330px;
   font-size: 20px;
   outline: none;
   text-align: center;
@@ -76,7 +77,7 @@ body {
 .greeting {
   display: flex;
   flex-direction: column;
-  width: 395px;
+  width: 330px;
   height: 90px;
   background-color: rgba(149, 175, 192, 0.3);
   border-radius: 10px;
@@ -115,7 +116,7 @@ body {
 
 .todolist-label {
   padding: 10px;
-  width: 395px;
+  width: 330px;
   text-align: center;
   background-color: rgba(149, 175, 192, 0.3);
   color: #dff9fb;
@@ -128,7 +129,7 @@ body {
   height: 40px;
   border: 0px;
   border-radius: 10px;
-  width: 395px;
+  width: 330px;
   font-size: 20px;
   outline: none;
   text-align: center;
@@ -140,7 +141,7 @@ body {
 }
 
 .todo-ul li {
-  width: 395px;
+  width: 330px;
   border-radius: 10px;
   background-color: rgba(149, 175, 192, 0.3);
   color: #dff9fb;
