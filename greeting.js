@@ -21,7 +21,7 @@ function loadName() {
     formShowing();
   } else {
     greetingShowing();
-    greeting.innerHTML = `<span>Welcome!</span><span>${name}</span>`;
+    greeting.innerHTML = `<span>Welcome~ 🤗🎉</span><span>${name}</span>`;
   }
 }
 
